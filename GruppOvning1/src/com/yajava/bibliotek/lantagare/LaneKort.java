@@ -1,5 +1,5 @@
 package com.yajava.bibliotek.lantagare;
 
-public class Lanekort {
-
+public class LaneKort {
+	
 }
