@@ -2,14 +2,17 @@ package com.yajava.bibliotek.bibliotekshylla;
 
 import java.util.ArrayList;
 import com.yajava.bibliotek.bok.Bok;
+import com.yajava.bibliotek.sab.Sab;///////////
 
 public class Bibliotekshylla {
 	private String category;
+	private Sab sabCode; //////////////////////
 	private ArrayList<Bok> books;
 	
 	
-	public Bibliotekshylla(String category) {
+	public Bibliotekshylla(String category, Sab sabCode) {
 		this.category = category;
+		this.sabCode = sabCode;
 		this.books = new ArrayList<Bok>();
 	}
 
@@ -20,14 +23,13 @@ public class Bibliotekshylla {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-
 	
-	public ArrayList<Bok> getBooks() {
-		return books;
+	public Sab getSabCode() {
+		return sabCode;
 	}
 
-	public void setBooks(ArrayList<Bok> books) {
-		this.books = books;
+	public ArrayList<Bok> getBooks() {
+		return books;
 	}
 	
 	

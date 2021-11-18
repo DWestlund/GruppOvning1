@@ -31,7 +31,7 @@ public class Bok {
 	}
 
 	public Sab getSab() {
-		return this.sabCode;
+		return sabCode;
 	}
 
 }
