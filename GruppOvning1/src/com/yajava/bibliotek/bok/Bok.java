@@ -8,10 +8,10 @@ public class Bok {
 	private Sab sabCode;
 	
 	
-	public Bok(String title, String author, Sab sabCode) {
+	public Bok(String title, String author, String code) {
 		this.title = title;
 		this.author = author;
-		this.sabCode = sabCode;
+		this.sabCode = new Sab(code);
 		
 	}
 	

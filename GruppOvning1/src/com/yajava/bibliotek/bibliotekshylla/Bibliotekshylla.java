@@ -1,21 +1,21 @@
 package com.yajava.bibliotek.bibliotekshylla;
 
 import java.util.ArrayList;
+
 import com.yajava.bibliotek.bok.Bok;
-import com.yajava.bibliotek.sab.Sab;///////////
 
 public class Bibliotekshylla {
 	private String category;
-	private Sab sabCode; //////////////////////
+	private char sabChar;
 	private ArrayList<Bok> books;
 	
 	
-	public Bibliotekshylla(String category, Sab sabCode) {
+	public Bibliotekshylla(String category, char sabChar) {
 		this.category = category;
-		this.sabCode = sabCode;
+		this.sabChar = sabChar;
 		this.books = new ArrayList<Bok>();
+		
 	}
-
 	
 	public String getCategory() {
 		return category;
@@ -24,8 +24,8 @@ public class Bibliotekshylla {
 		this.category = category;
 	}
 	
-	public Sab getSabCode() {
-		return sabCode;
+	public char getSabChar() {
+		return sabChar;
 	}
 
 	public ArrayList<Bok> getBooks() {
